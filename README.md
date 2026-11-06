@@ -20,6 +20,7 @@ An interactive **R Shiny** app that combines a **live weather dashboard** with *
 7. [Code structure](#code-structure)
 8. [Troubleshooting](#troubleshooting)
 9. [Credits](#credits)
+10. [Team](#team)
 
 ---
 
@@ -29,7 +30,7 @@ An interactive **R Shiny** app that combines a **live weather dashboard** with *
 |---|---|---|---|
 | 1 | **Weather Dashboard** | Live current conditions, city search with autocomplete, 24-hour outlook, 7-day forecast, automatic insights | Open-Meteo API (live) |
 | 2 | **Descriptive Statistics** | Summary statistics, histogram with density and normal curve, monthly box plots, percentiles, threshold probability, IQR outliers | `weatherHistory.csv` |
-| 3 | **Correlation and Regression** | *(Member 3's section – to be integrated)* | `weatherHistory.csv` |
+| 3 | **Correlation and Regression** | Relationships between weather variables using correlation and regression models | `weatherHistory.csv` |
 | 4 | **Statistical Testing** | Welch's two-sample t-test comparing mean daily temperature between two months | `weatherHistory.csv` |
 
 ---
@@ -164,7 +165,9 @@ Choose a variable to see:
 Placeholder zeros in Humidity and Pressure are removed before analysis.
 
 ### Tab 3 – Correlation and Regression
-Reserved for Member 3's analysis.
+- Measures how strongly weather variables move together (for example temperature, humidity, pressure and wind speed) using **correlation**.
+- Fits **regression** models to describe and predict one variable from others.
+- Shows the results as charts and tables, with an interpretation of the relationships.
 
 ### Tab 4 – Statistical Testing
 1. Hourly data is averaged into **daily mean temperatures**.
@@ -192,6 +195,7 @@ app.R
 ├── SERVER
 │   ├── t1_server(...)     Tab 1 – live dashboard
 │   ├── t2_* reactives     Tab 2 – descriptive statistics
+│   ├── Tab 3 reactives    Tab 3 – correlation and regression
 │   └── Tab 4 reactives    raw_data → daily_data → analysis (t-test)
 └── shinyApp(ui, server)
 ```
@@ -220,8 +224,11 @@ app.R
 
 - **Live weather data:** [Open-Meteo](https://open-meteo.com) (CC BY 4.0)
 - **Historical dataset:** Szeged Weather History, Kaggle
-- **Team:**
-  - Tab 1 – Weather Dashboard
-  - Tab 2 – Descriptive Statistics
-  - Tab 3 – Correlation & Regression
-  - Tab 4 – Statistical Testing
+## Team
+
+| Tab | Section | Member |
+|---|---|---|
+| 1 | Weather Dashboard | _Name_ |
+| 2 | Descriptive Statistics | _Name_ |
+| 3 | Correlation & Regression | _Name_ |
+| 4 | Statistical Testing | _Name_ |
