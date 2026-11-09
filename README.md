@@ -228,7 +228,7 @@ app.R
 
 | Tab | Section | Member |
 |---|---|---|
-| 1 | Weather Dashboard | _Name_ |
-| 2 | Descriptive Statistics | _Name_ |
-| 3 | Correlation & Regression | _Name_ |
-| 4 | Statistical Testing | _Name_ |
+| 1 | Weather Dashboard | _Shree Magathi_ |
+| 2 | Descriptive Statistics | _Kishore Anand_ |
+| 3 | Correlation & Regression | _Bhavana Shrii_ |
+| 4 | Statistical Testing | _Aswini_ |
